@@ -1,2 +1,2 @@
-set(DEPENDS tbb glog)
+set(DEPENDS tbb glog pcl)
 include(executable)

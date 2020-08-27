@@ -134,4 +134,15 @@ struct Penguin : public BaseAnimal, public Breathe<Air>, public Swin<Water>, pub
     Penguin();
 };
 
+template<class Air, class Food>
+struct TemplateAnimal : public Eat<Food>, public Breathe<Air> {
+
+};
+
+template<class Air, class Food, class Water>
+struct SwinTemplateAnimal : public Eat<Food>, public Breathe<Air>, public Swin<Water> {
+
+};
+
+
 #endif //PUPPY_POLICYANIMAL_H
